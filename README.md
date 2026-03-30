@@ -12,3 +12,6 @@ https://docs.google.com/document/d/1wWJmD2SzigcnQ3tiD46re3P6PiPxqjmUPAkXthw_Uyo/
 
 TestNg Report -
 file:///Users/nijinsha/Downloads/Automation_project/AutomationProject/test-output/emailable-report.html#summary
+
+Presentation video -
+https://www.loom.com/share/8855c529768642c48e8f4f09ac499951
