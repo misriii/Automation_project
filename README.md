@@ -9,3 +9,6 @@ https://docs.google.com/spreadsheets/d/1-gzEszcTntZAsGRBtLbrw0LtN_1DrO0ADZj1ZEwG
 
 Test Summary Reprot -
 https://docs.google.com/document/d/1wWJmD2SzigcnQ3tiD46re3P6PiPxqjmUPAkXthw_Uyo/edit?usp=sharing
+
+TestNg Report -
+file:///Users/nijinsha/Downloads/Automation_project/AutomationProject/test-output/emailable-report.html#summary
