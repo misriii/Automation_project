@@ -102,11 +102,11 @@ public class productPage {
 
         WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(filter));
 
-        // scroll + JS click (fix clickable issue)
+        
         js.executeScript("arguments[0].scrollIntoView(true);", el);
         js.executeScript("arguments[0].click();", el);
 
-        // wait for filter applied
+       
         wait.until(ExpectedConditions.urlContains("category"));
     }
 

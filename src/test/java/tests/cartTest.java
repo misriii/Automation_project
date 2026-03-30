@@ -12,7 +12,7 @@ import pages.cart;
 import base.BaseTest;
 
 public class cartTest extends BaseTest {
-	 // 🔹 1. Cart Page Load
+	
     @Test
     public void verifyCartPageDisplayed() {
         cart cart = new cart(driver);
@@ -23,7 +23,7 @@ public class cartTest extends BaseTest {
                 "Cart page not displayed");
     }
 
-    // 🔹 2. Product in Cart
+    
     @Test
     public void verifyProductAddedToCart() {
     	cart cart = new cart(driver);
@@ -35,7 +35,7 @@ public class cartTest extends BaseTest {
     }
 
 
-    // 🔹 4. Remove Product
+   
     @Test
     public void verifyRemoveProduct() {
     	cart cart = new cart(driver);
@@ -47,7 +47,7 @@ public class cartTest extends BaseTest {
                 "Product not removed");
     }
 
-    // 🔹 5. Multiple Products
+  
     @Test
     public void verifyMultipleProductsAdded() {
         cart cart = new cart(driver);
@@ -59,7 +59,7 @@ public class cartTest extends BaseTest {
     }
 
 
-    // 🔹 7. Place Order
+   
     @Test
     public void verifyPlaceOrder() {
     	 LoginPage login = new LoginPage(driver);

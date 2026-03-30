@@ -22,7 +22,7 @@ WebDriverWait wait;
 		
 	}
 	
-	// Subscribe Section
+	
 		 By emailField = By.name("email");
 		 By subscribeButton = By.xpath("//button[normalize-space()='Subscribe']");
 		 
@@ -35,20 +35,20 @@ WebDriverWait wait;
 		    }
 
 		 
-		// Enter email
+		
 		 public void enterEmail(String email) {
 		     driver.findElement(emailField).clear();
 		     driver.findElement(emailField).sendKeys(email);
 		 }
 
 		
-		 // Click subscribe
+		
 		 public void clickSubscribe() {
 		     driver.findElement(subscribeButton).click();
 		 }
 
 
-		 // Get validation message (browser)
+		 
 		    public String getValidationMessage() {
 		        return driver.findElement(emailField).getAttribute("validationMessage");
 		    }
