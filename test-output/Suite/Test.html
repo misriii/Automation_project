@@ -1,0 +1,359 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>46/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 28 14:12:41 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>358 seconds (358877 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.cartTest.verifyPlaceOrder()'><b>verifyPlaceOrder</b><br>Test class: tests.cartTest</td>
+<td><div><pre>java.lang.AssertionError: Order failed expected [true] but found [false]
+	at tests.cartTest.verifyPlaceOrder(cartTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1080651718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1080651718'><pre>java.lang.AssertionError: Order failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.cartTest.verifyPlaceOrder(cartTest.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>6</td>
+<td>tests.cartTest@59fc684e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.HomePageTest.verifyOurStoryNavigation()'><b>verifyOurStoryNavigation</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyBlogNavigation()'><b>verifyBlogNavigation</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.ourstoryTest.verifyOurStoryTitle()'><b>verifyOurStoryTitle</b><br>Test class: tests.ourstoryTest</td>
+<td></td>
+<td>4</td>
+<td>tests.ourstoryTest@46c670a6</td></tr>
+<tr>
+<td title='tests.blogTest.verifyBlogNavigation()'><b>verifyBlogNavigation</b><br>Test class: tests.blogTest</td>
+<td></td>
+<td>1</td>
+<td>tests.blogTest@5ae81e1</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyLogoIsDisplayed()'><b>verifyLogoIsDisplayed</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.cartTest.verifyCartPageDisplayed()'><b>verifyCartPageDisplayed</b><br>Test class: tests.cartTest</td>
+<td></td>
+<td>1</td>
+<td>tests.cartTest@59fc684e</td></tr>
+<tr>
+<td title='tests.productTest.verifySingleFilter()'><b>verifySingleFilter</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>2</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.blogTest.verifySearchEmpty()'><b>verifySearchEmpty</b><br>Test class: tests.blogTest</td>
+<td></td>
+<td>3</td>
+<td>tests.blogTest@5ae81e1</td></tr>
+<tr>
+<td title='tests.MyAccountTest.paymentDisplay()'><b>paymentDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>2</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.blogTest.verifySearchValid()'><b>verifySearchValid</b><br>Test class: tests.blogTest</td>
+<td></td>
+<td>1</td>
+<td>tests.blogTest@5ae81e1</td></tr>
+<tr>
+<td title='tests.productTest.verifyNavigationToDetails()'><b>verifyNavigationToDetails</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>3</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.ourstoryTest.verifyImageDisplayed()'><b>verifyImageDisplayed</b><br>Test class: tests.ourstoryTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ourstoryTest@46c670a6</td></tr>
+<tr>
+<td title='tests.productTest.verifyMultipleClicksAddToCart()'><b>verifyMultipleClicksAddToCart</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>1</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.HomePageTest.title()'><b>title</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogout()'><b>testLogout</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@2fd1731c</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyCartNavigation()'><b>verifyCartNavigation</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.LoginTest.InvalidPassword()'><b>InvalidPassword</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@2fd1731c</td></tr>
+<tr>
+<td title='tests.productTest.verifyAddToCartTrigger()'><b>verifyAddToCartTrigger</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>1</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.cartTest.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: tests.cartTest</td>
+<td></td>
+<td>1</td>
+<td>tests.cartTest@59fc684e</td></tr>
+<tr>
+<td title='tests.MyAccountTest.shippingAddressDisplay()'><b>shippingAddressDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>2</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.productTest.verifyProductDetailsDisplayed()'><b>verifyProductDetailsDisplayed</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>0</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.subsribeTest.subscribeWithEmptyEmail()'><b>subscribeWithEmptyEmail</b><br>Test class: tests.subsribeTest</td>
+<td></td>
+<td>0</td>
+<td>tests.subsribeTest@5ae76500</td></tr>
+<tr>
+<td title='tests.MyAccountTest.orderNumberDisplay()'><b>orderNumberDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>2</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.MyAccountTest.productNameDisplay()'><b>productNameDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>2</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.subsribeTest.subscribeWithInvalidEmail()'><b>subscribeWithInvalidEmail</b><br>Test class: tests.subsribeTest</td>
+<td></td>
+<td>0</td>
+<td>tests.subsribeTest@5ae76500</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyLoginNavigation()'><b>verifyLoginNavigation</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.LoginTest.InvalidUsername()'><b>InvalidUsername</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@2fd1731c</td></tr>
+<tr>
+<td title='tests.blogTest.verifyViewPostNavigation()'><b>verifyViewPostNavigation</b><br>Test class: tests.blogTest</td>
+<td></td>
+<td>1</td>
+<td>tests.blogTest@5ae81e1</td></tr>
+<tr>
+<td title='tests.MyAccountTest.OrdersScroll()'><b>OrdersScroll</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>20</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.ourstoryTest.verifyVideoDisplayed()'><b>verifyVideoDisplayed</b><br>Test class: tests.ourstoryTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ourstoryTest@46c670a6</td></tr>
+<tr>
+<td title='tests.productTest.verifyProductListing()'><b>verifyProductListing</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>5</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.MyAccountTest.ViewDetails()'><b>ViewDetails</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>5</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.cartTest.verifyMultipleProductsAdded()'><b>verifyMultipleProductsAdded</b><br>Test class: tests.cartTest</td>
+<td></td>
+<td>7</td>
+<td>tests.cartTest@59fc684e</td></tr>
+<tr>
+<td title='tests.blogTest.verifySearchInvalid()'><b>verifySearchInvalid</b><br>Test class: tests.blogTest</td>
+<td></td>
+<td>1</td>
+<td>tests.blogTest@5ae81e1</td></tr>
+<tr>
+<td title='tests.cartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: tests.cartTest</td>
+<td></td>
+<td>2</td>
+<td>tests.cartTest@59fc684e</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>tests.LoginTest@2fd1731c</td></tr>
+<tr>
+<td title='tests.productTest.verifyQuantitySelection()'><b>verifyQuantitySelection</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>0</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.LoginTest.blankInput()'><b>blankInput</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@2fd1731c</td></tr>
+<tr>
+<td title='tests.MyAccountTest.myAccountPageNavigation()'><b>myAccountPageNavigation</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>2</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.productTest.verifyMultipleProductNavigation()'><b>verifyMultipleProductNavigation</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>0</td>
+<td>tests.productTest@644c78d4</td></tr>
+<tr>
+<td title='tests.ourstoryTest.verifyOurStoryNavigation()'><b>verifyOurStoryNavigation</b><br>Test class: tests.ourstoryTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ourstoryTest@46c670a6</td></tr>
+<tr>
+<td title='tests.MyAccountTest.OrdersDisplay()'><b>OrdersDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>6</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.MyAccountTest.billingAddressDisplay()'><b>billingAddressDisplay</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>5</td>
+<td>tests.MyAccountTest@30ed9c6c</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyProductNavigation()'><b>verifyProductNavigation</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.HomePageTest@782a4fff</td></tr>
+<tr>
+<td title='tests.subsribeTest.subscribeWithValidEmail()'><b>subscribeWithValidEmail</b><br>Test class: tests.subsribeTest</td>
+<td></td>
+<td>2</td>
+<td>tests.subsribeTest@5ae76500</td></tr>
+<tr>
+<td title='tests.productTest.verifyMultipleFilterNavigation()'><b>verifyMultipleFilterNavigation</b><br>Test class: tests.productTest</td>
+<td></td>
+<td>2</td>
+<td>tests.productTest@644c78d4</td></tr>
+</table><p>
+</body>
+</html>
